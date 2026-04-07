@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+
+# Sensitive keys (do NOT publish!)
+private.key
+# other key/cert formats you might generate locally
+*.pem
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.Python
+pip-wheel-metadata/
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Docker overrides (if any)
+docker-compose.override.yml

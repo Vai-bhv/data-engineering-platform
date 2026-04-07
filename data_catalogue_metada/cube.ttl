@@ -1,0 +1,759 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/datacube/ontology#> .
+@prefix exr: <http://example.org/datacube/resources/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-d: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-m: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/datacube/resources/slice/provider/1> a qb:Slice ;
+    qb:dataSet exr:dataset ;
+    qb:observation <http://example.org/datacube/resources/observation/1>,
+        <http://example.org/datacube/resources/observation/10>,
+        <http://example.org/datacube/resources/observation/100>,
+        <http://example.org/datacube/resources/observation/11>,
+        <http://example.org/datacube/resources/observation/12>,
+        <http://example.org/datacube/resources/observation/13>,
+        <http://example.org/datacube/resources/observation/14>,
+        <http://example.org/datacube/resources/observation/15>,
+        <http://example.org/datacube/resources/observation/16>,
+        <http://example.org/datacube/resources/observation/17>,
+        <http://example.org/datacube/resources/observation/18>,
+        <http://example.org/datacube/resources/observation/19>,
+        <http://example.org/datacube/resources/observation/2>,
+        <http://example.org/datacube/resources/observation/20>,
+        <http://example.org/datacube/resources/observation/21>,
+        <http://example.org/datacube/resources/observation/22>,
+        <http://example.org/datacube/resources/observation/23>,
+        <http://example.org/datacube/resources/observation/24>,
+        <http://example.org/datacube/resources/observation/25>,
+        <http://example.org/datacube/resources/observation/26>,
+        <http://example.org/datacube/resources/observation/27>,
+        <http://example.org/datacube/resources/observation/28>,
+        <http://example.org/datacube/resources/observation/29>,
+        <http://example.org/datacube/resources/observation/3>,
+        <http://example.org/datacube/resources/observation/30>,
+        <http://example.org/datacube/resources/observation/31>,
+        <http://example.org/datacube/resources/observation/32>,
+        <http://example.org/datacube/resources/observation/33>,
+        <http://example.org/datacube/resources/observation/34>,
+        <http://example.org/datacube/resources/observation/35>,
+        <http://example.org/datacube/resources/observation/36>,
+        <http://example.org/datacube/resources/observation/37>,
+        <http://example.org/datacube/resources/observation/38>,
+        <http://example.org/datacube/resources/observation/39>,
+        <http://example.org/datacube/resources/observation/4>,
+        <http://example.org/datacube/resources/observation/40>,
+        <http://example.org/datacube/resources/observation/41>,
+        <http://example.org/datacube/resources/observation/42>,
+        <http://example.org/datacube/resources/observation/43>,
+        <http://example.org/datacube/resources/observation/44>,
+        <http://example.org/datacube/resources/observation/45>,
+        <http://example.org/datacube/resources/observation/46>,
+        <http://example.org/datacube/resources/observation/47>,
+        <http://example.org/datacube/resources/observation/48>,
+        <http://example.org/datacube/resources/observation/49>,
+        <http://example.org/datacube/resources/observation/5>,
+        <http://example.org/datacube/resources/observation/50>,
+        <http://example.org/datacube/resources/observation/51>,
+        <http://example.org/datacube/resources/observation/52>,
+        <http://example.org/datacube/resources/observation/53>,
+        <http://example.org/datacube/resources/observation/54>,
+        <http://example.org/datacube/resources/observation/55>,
+        <http://example.org/datacube/resources/observation/56>,
+        <http://example.org/datacube/resources/observation/57>,
+        <http://example.org/datacube/resources/observation/58>,
+        <http://example.org/datacube/resources/observation/59>,
+        <http://example.org/datacube/resources/observation/6>,
+        <http://example.org/datacube/resources/observation/60>,
+        <http://example.org/datacube/resources/observation/61>,
+        <http://example.org/datacube/resources/observation/62>,
+        <http://example.org/datacube/resources/observation/63>,
+        <http://example.org/datacube/resources/observation/64>,
+        <http://example.org/datacube/resources/observation/65>,
+        <http://example.org/datacube/resources/observation/66>,
+        <http://example.org/datacube/resources/observation/67>,
+        <http://example.org/datacube/resources/observation/68>,
+        <http://example.org/datacube/resources/observation/69>,
+        <http://example.org/datacube/resources/observation/7>,
+        <http://example.org/datacube/resources/observation/70>,
+        <http://example.org/datacube/resources/observation/71>,
+        <http://example.org/datacube/resources/observation/72>,
+        <http://example.org/datacube/resources/observation/73>,
+        <http://example.org/datacube/resources/observation/74>,
+        <http://example.org/datacube/resources/observation/75>,
+        <http://example.org/datacube/resources/observation/76>,
+        <http://example.org/datacube/resources/observation/77>,
+        <http://example.org/datacube/resources/observation/78>,
+        <http://example.org/datacube/resources/observation/79>,
+        <http://example.org/datacube/resources/observation/8>,
+        <http://example.org/datacube/resources/observation/80>,
+        <http://example.org/datacube/resources/observation/81>,
+        <http://example.org/datacube/resources/observation/82>,
+        <http://example.org/datacube/resources/observation/83>,
+        <http://example.org/datacube/resources/observation/84>,
+        <http://example.org/datacube/resources/observation/85>,
+        <http://example.org/datacube/resources/observation/86>,
+        <http://example.org/datacube/resources/observation/87>,
+        <http://example.org/datacube/resources/observation/88>,
+        <http://example.org/datacube/resources/observation/89>,
+        <http://example.org/datacube/resources/observation/9>,
+        <http://example.org/datacube/resources/observation/90>,
+        <http://example.org/datacube/resources/observation/91>,
+        <http://example.org/datacube/resources/observation/92>,
+        <http://example.org/datacube/resources/observation/93>,
+        <http://example.org/datacube/resources/observation/94>,
+        <http://example.org/datacube/resources/observation/95>,
+        <http://example.org/datacube/resources/observation/96>,
+        <http://example.org/datacube/resources/observation/97>,
+        <http://example.org/datacube/resources/observation/98>,
+        <http://example.org/datacube/resources/observation/99> ;
+    qb:sliceStructure ex:structure .
+
+ex:participantsCount a qb:MeasureProperty ;
+    rdfs:subPropertyOf sdmx-m:obsValue ;
+    skos:prefLabel "Participants count"@en .
+
+ex:program a qb:DimensionProperty,
+        rdf:Property ;
+    rdfs:subPropertyOf sdmx-d:refStatisticalConcept ;
+    skos:prefLabel "Program"@en .
+
+ex:programScheme a skos:ConceptScheme ;
+    skos:prefLabel "Program"@en .
+
+ex:provider a qb:DimensionProperty,
+        rdf:Property ;
+    rdfs:subPropertyOf sdmx-d:refArea ;
+    skos:prefLabel "Provider"@en .
+
+ex:providerScheme a skos:ConceptScheme ;
+    skos:prefLabel "Provider"@en .
+
+<http://example.org/datacube/resources/observation/1> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/10> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/100> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/11> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/12> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/13> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/14> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/15> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/16> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/17> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/18> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/19> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/2> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/20> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/21> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/22> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/23> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/24> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/25> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/26> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/27> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/28> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/29> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/3> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/30> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/31> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/32> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/33> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/34> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/35> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/36> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/37> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/38> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/39> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/4> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/40> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/41> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/42> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/43> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/44> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/45> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/46> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/47> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/48> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/49> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/5> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/50> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/51> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/52> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/53> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/54> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/55> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/56> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/57> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/58> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/59> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/6> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/60> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/61> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/62> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/63> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/64> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/65> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/66> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/67> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/68> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/69> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/7> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/70> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/71> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/72> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/73> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/74> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/75> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/76> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/77> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/78> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/79> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/8> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/80> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/81> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/82> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/83> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/84> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/85> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/86> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/87> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/88> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/89> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/9> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/90> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/91> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/92> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/93> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/94> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/95> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/96> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/97> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/98> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+<http://example.org/datacube/resources/observation/99> a qb:Observation ;
+    ex:participantsCount 100 ;
+    ex:program <http://example.org/datacube/resources/program/1> ;
+    ex:provider <http://example.org/datacube/resources/provider/1> ;
+    qb:dataSet exr:dataset .
+
+ex:structure a qb:DataStructureDefinition ;
+    qb:component [ qb:dimension ex:provider ;
+            qb:order 1 ],
+        [ qb:measure ex:participantsCount ],
+        [ qb:dimension ex:program ;
+            qb:order 2 ] .
+
+<http://example.org/datacube/resources/program/1> a skos:Concept ;
+    skos:inScheme ex:programScheme ;
+    skos:prefLabel "Jednodenní - 6" .
+
+<http://example.org/datacube/resources/provider/1> a skos:Concept ;
+    skos:inScheme ex:providerScheme ;
+    skos:prefLabel "A2021/1187-SP" .
+
+exr:dataset a qb:DataSet ;
+    rdfs:label "Course Accreditation Cube"@en ;
+    dcterms:issued "2025-04-17"^^xsd:date ;
+    dcterms:license <https://gitlab.mff.cuni.cz/…/LICENSE> ;
+    dcterms:modified "2025-04-17"^^xsd:date ;
+    dcterms:publisher "Vaibhav Gupta" ;
+    dcterms:title "Course Accreditation Cube"@en ;
+    qb:structure ex:structure .
+

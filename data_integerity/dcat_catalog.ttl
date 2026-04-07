@@ -1,0 +1,64 @@
+@prefix base: <https://ksi.mff.cuni.cz/~guptava/232-NDBI046/resources#> .
+@prefix country: <https://publications.europa.eu/resource/distribution/country/rdf/skos_core/countries-skos.rdf#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eurovoc: <http://publications.europa.eu/resource/dataset/eurovoc/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+base:Catalog a dcat:Catalog ;
+    dcat:dataset base:CourseAccreditationDataset .
+
+base:ContactPoint a foaf:Person ;
+    foaf:mbox <mailto:vaibhavgupta853@matfyz.cuni.cz> .
+
+base:CourseAccreditationCSV a dcat:Distribution ;
+    dcterms:format <https://publications.europa.eu/resource/distribution/file-type/rdf/skos_core/filetypes-skos.rdf#file-type/CSV> ;
+    dcat:accessURL <https://example.org/data/dataset.csv> ;
+    dcat:byteSize "123456"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://example.org/data/dataset.csv> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> .
+
+base:CourseAccreditationCube a dcat:Distribution ;
+    dcterms:format <https://publications.europa.eu/resource/distribution/file-type/rdf/skos_core/filetypes-skos.rdf#file-type/Turtle> ;
+    dcat:accessURL <https://example.org/data/cube.ttl> ;
+    dcat:byteSize "234567"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://example.org/data/cube.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+base:CourseAccreditationDataset a dcat:Dataset ;
+    dcterms:accessRights "public"@en ;
+    dcterms:accrualPeriodicity <https://publications.europa.eu/resource/distribution/frequency/rdf/skos_core/frequency/ANNUAL> ;
+    dcterms:created "2025-04-17"^^xsd:date ;
+    dcterms:creator base:GUPTAV ;
+    dcterms:description "Dataset and Cube about course accreditations in the Czech Republic."@en ;
+    dcterms:issued "2025-04-17T10:00:00"^^xsd:dateTime ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2025-04-17T12:00:00"^^xsd:dateTime ;
+    dcterms:spatial country:CZE ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ;
+            dcat:endDate "2024-12-31"^^xsd:date ;
+            dcat:startDate "2024-01-01"^^xsd:date ] ;
+    dcterms:title "Course Accreditation Dataset and RDF Data Cube"@en ;
+    dcat:accessService base:SPARQLEndpoint ;
+    dcat:contactPoint base:ContactPoint ;
+    dcat:distribution base:CourseAccreditationCSV,
+        base:CourseAccreditationCube ;
+    dcat:keyword "Czech Republic"@en,
+        "accreditation"@en,
+        "education"@en ;
+    dcat:spatialResolutionInMeters 1000.0 ;
+    dcat:temporalResolution "P1Y"^^xsd:duration ;
+    dcat:theme eurovoc:1158,
+        eurovoc:4259,
+        eurovoc:7816 ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            prov:agent base:GUPTAV ;
+            prov:hadRole "creator"@en ] ;
+    prov:wasGeneratedBy base:ETLWorkflow .
+
+base:SPARQLEndpoint a dcat:DataService ;
+    dcat:endpointDescription "SPARQL endpoint for course accreditation"@en ;
+    dcat:endpointURL <https://example.org/sparql> .
+
